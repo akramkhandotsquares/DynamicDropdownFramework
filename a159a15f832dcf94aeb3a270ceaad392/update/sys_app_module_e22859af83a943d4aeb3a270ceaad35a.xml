@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Dynamic Dropdown">67aba193836dcf94aeb3a270ceaad369</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Dynamic Dropdown</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1954494_dynami_0_dropdown_test</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1954494_dynami_0.admin,x_1954494_dynami_0.user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 06:14:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e22859af83a943d4aeb3a270ceaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dropdown Test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dynamic Dropdown Framework" source="x_1954494_dynami_0">a159a15f832dcf94aeb3a270ceaad392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dynamic Dropdown Framework">a159a15f832dcf94aeb3a270ceaad392</sys_scope>
+        <sys_update_name>sys_app_module_e22859af83a943d4aeb3a270ceaad35a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 06:14:26</sys_updated_on>
+        <timeline_page/>
+        <title>Dropdown Test</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

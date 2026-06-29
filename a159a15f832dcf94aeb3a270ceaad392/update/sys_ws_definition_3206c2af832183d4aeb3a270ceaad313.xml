@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_uri>/api/x_1954494_dynami_0/dynamic_dropdown</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>58254b957f631210786369d73c866582</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>Dynamic Dropdown API</name>
+        <namespace>x_1954494_dynami_0</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>dynamic_dropdown</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 09:34:11</sys_created_on>
+        <sys_id>3206c2af832183d4aeb3a270ceaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dynamic Dropdown API</sys_name>
+        <sys_package display_value="Dynamic Dropdown Framework" source="x_1954494_dynami_0">a159a15f832dcf94aeb3a270ceaad392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dynamic Dropdown Framework">a159a15f832dcf94aeb3a270ceaad392</sys_scope>
+        <sys_update_name>sys_ws_definition_3206c2af832183d4aeb3a270ceaad313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 09:34:11</sys_updated_on>
+    </sys_ws_definition>
+</record_update>
