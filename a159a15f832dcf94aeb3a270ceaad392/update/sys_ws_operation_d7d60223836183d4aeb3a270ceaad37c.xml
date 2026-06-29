@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>Get Child Values</name>
+        <operation_script><![CDATA[(function process(request, response) {
+
+    var parentValue = request.queryParams.parent;
+
+    var result = [];
+
+    var gr = new GlideRecord('x_1954494_dynami_0_dropdown_mapping');
+
+    gr.addQuery('parent_value', parentValue);
+
+    gr.query();
+
+    while (gr.next()) {
+
+        result.push({
+            value: gr.child_value.toString()
+        });
+
+    }
+
+    response.setBody(result);
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1954494_dynami_0/dynamic_dropdown/child-values</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/child-values</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 09:35:31</sys_created_on>
+        <sys_id>d7d60223836183d4aeb3a270ceaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Child Values</sys_name>
+        <sys_package display_value="Dynamic Dropdown Framework" source="x_1954494_dynami_0">a159a15f832dcf94aeb3a270ceaad392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dynamic Dropdown Framework">a159a15f832dcf94aeb3a270ceaad392</sys_scope>
+        <sys_update_name>sys_ws_operation_d7d60223836183d4aeb3a270ceaad37c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 09:35:31</sys_updated_on>
+        <web_service_definition display_value="Dynamic Dropdown API">3206c2af832183d4aeb3a270ceaad313</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

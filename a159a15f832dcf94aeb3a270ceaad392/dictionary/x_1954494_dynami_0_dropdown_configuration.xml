@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="814be153836dcf94aeb3a270ceaad312" label="Dropdown Configuration" max_length="40" name="x_1954494_dynami_0_dropdown_configuration" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Child Field" max_length="500" name="child_field" type="string"/>
+        <element label="Parent Field" max_length="500" name="parent_field" type="string"/>
+        <element label="Name" max_length="500" name="name" type="string"/>
+    </element>
+</database>

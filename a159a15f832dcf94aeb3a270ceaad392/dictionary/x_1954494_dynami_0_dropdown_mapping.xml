@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c237799b83adcf94aeb3a270ceaad3e5" label="Dropdown Mapping" max_length="40" name="x_1954494_dynami_0_dropdown_mapping" type="collection">
+        <element label="Configuration" mandatory="true" max_length="32" name="configuration" reference="x_1954494_dynami_0_dropdown_configuration" type="reference"/>
+        <element label="Parent Value" max_length="500" name="parent_value" type="string"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Child Value" max_length="500" name="child_value" type="string"/>
+        <index name="index">
+            <element name="configuration"/>
+        </index>
+    </element>
+</database>
