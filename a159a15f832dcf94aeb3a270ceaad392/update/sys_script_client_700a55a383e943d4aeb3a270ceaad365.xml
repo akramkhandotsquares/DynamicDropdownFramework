@@ -26,7 +26,7 @@
 
         g_form.clearOptions('state');
 
-        g_form.addOption('state', '', '-- None --');
+        //g_form.addOption('state', '', '-- None --');
 
         for (var i = 0; i < states.length; i++) {
             g_form.addOption('state', states[i], states[i]);
@@ -39,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>700a55a383e943d4aeb3a270ceaad365</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Country Change</sys_name>
         <sys_overrides/>
         <sys_package display_value="Dynamic Dropdown Framework" source="x_1954494_dynami_0">a159a15f832dcf94aeb3a270ceaad392</sys_package>
@@ -47,7 +47,7 @@
         <sys_scope display_value="Dynamic Dropdown Framework">a159a15f832dcf94aeb3a270ceaad392</sys_scope>
         <sys_update_name>sys_script_client_700a55a383e943d4aeb3a270ceaad365</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 06:42:24</sys_updated_on>
+        <sys_updated_on>2026-06-30 11:25:29</sys_updated_on>
         <table>x_1954494_dynami_0_dropdown_test</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

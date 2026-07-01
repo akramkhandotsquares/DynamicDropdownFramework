@@ -3,13 +3,8 @@
         <element choice="1" label="State" max_length="40" name="state" type="choice">
             <choice/>
         </element>
-        <element choice="1" label="Country" max_length="40" name="country" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="USA" value="USA"/>
-                <element inactive_on_update="false" label="India" value="India"/>
-                <element inactive_on_update="false" label="Canada" value="Canada"/>
-                <element inactive_on_update="false" label="-- New choice --" value="-- New choice --"/>
-            </choice>
+        <element choice="3" label="Country" mandatory="true" max_length="40" name="country" type="choice">
+            <choice/>
         </element>
     </element>
 </database>
