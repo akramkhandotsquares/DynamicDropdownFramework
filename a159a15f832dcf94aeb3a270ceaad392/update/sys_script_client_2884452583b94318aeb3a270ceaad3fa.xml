@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Get all countries</description>
+        <field/>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages>Get all countries</messages>
+        <name>Country onload from mapping</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    //console.log("onLoad started");
+
+    var ga = new GlideAjax('DynamicDropdownAPI');
+
+    ga.addParam('sysparm_name', 'getParentValues');  
+    ga.getXMLAnswer(function(response) {       
+
+        if (!response) {
+            alert("No data returned");
+            return;
+        }
+
+        var countries = JSON.parse(response);
+
+        g_form.clearOptions('country');
+        g_form.addOption('country', '', '-- Select Country --');
+
+        for (var i = 0; i < countries.length; i++) {
+            g_form.addOption('country', countries[i], countries[i]);
+        }
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-30 10:03:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2884452583b94318aeb3a270ceaad3fa</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Country onload from mapping</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dynamic Dropdown Framework" source="x_1954494_dynami_0">a159a15f832dcf94aeb3a270ceaad392</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dynamic Dropdown Framework">a159a15f832dcf94aeb3a270ceaad392</sys_scope>
+        <sys_update_name>sys_script_client_2884452583b94318aeb3a270ceaad3fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-01 06:13:22</sys_updated_on>
+        <table>x_1954494_dynami_0_dropdown_test</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
